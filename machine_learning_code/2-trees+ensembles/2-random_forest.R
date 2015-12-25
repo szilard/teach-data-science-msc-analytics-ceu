@@ -2,7 +2,7 @@
 library(randomForest)
 set.seed(123)
 
-# read data, split train/test machine_learning/2-trees+ensembles/1-trees.R
+# read data, split train/test machine_learning_code/2-trees+ensembles/1-trees.R
 dim(d_train)
 dim(d_test)
 
