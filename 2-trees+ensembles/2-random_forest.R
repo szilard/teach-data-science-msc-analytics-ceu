@@ -1,0 +1,18 @@
+
+library(randomForest)
+set.seed(123)
+
+# read data, split train/test machine_learning/2-trees+ensembles/1-trees.R
+dim(d_train)
+dim(d_test)
+
+md <- randomForest(as.factor(spam) ~ ., data = d_train, ntree = 100)
+md
+plot(md)
+
+phat <- predict(md, d_test, type = "prob")[,"1"]
+table(ifelse(phat>0.5,1,0), d_test$spam)
+
+md <- randomForest(as.factor(spam) ~ ., data = d_train, ntree = 100, importance = TRUE)
+varImpPlot(md, type = 2)
+

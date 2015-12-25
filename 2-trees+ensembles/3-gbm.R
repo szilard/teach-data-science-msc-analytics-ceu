@@ -1,0 +1,39 @@
+
+library(gbm)
+set.seed(123)
+
+# read data, split train/test machine_learning/2-trees+ensembles/1-trees.R
+dim(d_train)
+dim(d_test)
+
+md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+          n.trees = 100, interaction.depth = 10, shrinkage = 0.01)
+md
+
+yhat <- predict(md, d_test, n.trees = 100) 
+table(ifelse(yhat>0,1,0), d_test$spam)
+
+args(gbm)
+
+md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+          n.trees = 100, interaction.depth = 10, shrinkage = 0.01,
+          cv.folds = 5)
+gbm.perf(md, plot.it = TRUE)
+
+md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+          n.trees = 100, interaction.depth = 10, shrinkage = 0.3,
+          cv.folds = 5)
+gbm.perf(md, plot.it = TRUE)
+md
+
+yhat <- predict(md, d_test, n.trees = 100) 
+table(ifelse(yhat>0,1,0), d_test$spam)
+
+yhat <- predict(md, d_test, n.trees = gbm.perf(md, plot.it = FALSE)) 
+table(ifelse(yhat>0,1,0), d_test$spam)
+
+# more tweaking of params see later
+
+
+
+
