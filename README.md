@@ -6,8 +6,8 @@ Data Science course taught in the new (2015)
 [MSc in Business Analytics program](http://business.ceu.edu/msc-in-business-analytics) 
 at the Central European University (CEU).
 
-It is pretty limited one can achieve/teach 
-in a 2 credit course (1200 minutes/20 hours net) to
+It is limited one can achieve/teach 
+in a 2-credit course (1200 minutes/20 hours net) to
 students with varying analytical background. As most data science topics except 
 machine learning are covered (to some extent) in other courses in the program, 
 I decided to spend 60-70% of the available time on machine learning. 
@@ -15,7 +15,8 @@ Yet, I'm still dedicating the
 rest to an overview of data science with topics such as exploratory data analysis, data visualization, reproducibility, tools for data analysis etc. 
 (and emphasizing how all these come together).
 
-My views on what a data science curriculum should contain are briefly expressed below
+My views on what a more complete data science curriculum 
+should contain are briefly expressed below
 and also in this [post](https://github.com/szilard/datascience-course-historical).
 
 -------------------------------------------------------------
