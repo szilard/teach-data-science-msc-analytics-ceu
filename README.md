@@ -15,7 +15,7 @@ Yet, I'm still dedicating the
 rest to an overview of data science with topics such as exploratory data analysis, data visualization, reproducibility, tools for data analysis etc. 
 (and emphasizing how all these come together).
 
-My views on what a more complete data science curriculum 
+My views on what a data science curriculum 
 should contain are briefly expressed below
 and also in this [post](https://github.com/szilard/datascience-course-historical).
 
