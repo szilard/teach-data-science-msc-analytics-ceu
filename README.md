@@ -66,13 +66,13 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 Leo Breiman: [Statistical Modeling: The Two Cultures](http://projecteuclid.org/euclid.ss/1009213726) (pp. 199, 202-205)
 
-[Demo code](machine_learning/1-intro+linear)
+[Demo code](machine_learning_code/1-intro+linear)
 
 **4.** [ML] Decision trees. Bagging. Random forests. GBM. Ensembles I.
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), 2nd Edition, Ch. 9 (pp. 295, 305-312), Ch. 8 (pp. 282-286), Ch. 15 (pp. 587-594), Ch. 10 (pp. 337-340)
 
-[Demo code](machine_learning/2-trees+ensembles/)
+[Demo code](machine_learning_code/2-trees+ensembles/)
 
 **5.** [ML] **Model evaluation and validation**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
 
@@ -80,7 +80,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
-[Demo code](machine_learning/3-model_eval)
+[Demo code](machine_learning_code/3-model_eval)
 
 ...
 
