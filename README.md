@@ -16,7 +16,7 @@ rest to an overview of data science with topics such as exploratory data analysi
 (and emphasizing how to get more details from the other courses and how all these come together).
 
 My views on what a more overeaching data science curriculum 
-should contain are briefly expressed below
+should be are briefly expressed below
 and also in [this post](https://github.com/szilard/datascience-course-historical).
 
 -------------------------------------------------------------
@@ -35,7 +35,7 @@ and also in [this post](https://github.com/szilard/datascience-course-historical
 
 #### Course description:
 
-This course will provide a brief overview of Data Science, the field aimed at extracting business value from data. Despite the new name and the recent hype, Data Science is actually not new, it has solid foundations in *statistics* and *computing technology* that go back several decades. A Data Science project usually involves several iterations of the following steps: business understanding, data acquisition, exploratory data analysis, data cleaning, feature engineering, advanced statistical modeling, model validation, technical implementation and deployment and communication of results to decision makers. This course will discuss these steps along with the knowledge and the technology necessary to be able to perform them; some topics will be discussed in very details, while others will have pointers to other courses in the MSc in Business Analytics program for further coverage.
+This course will provide a brief overview of Data Science, the field aimed at extracting business value from data. Despite the new name and the recent hype, Data Science is actually not new, it has solid foundations in *statistics* and *computing technology* that go back several decades. A Data Science project usually involves several iterations of the following steps: business understanding, data acquisition, exploratory data analysis, data cleaning, feature engineering, advanced statistical modeling, model validation, technical implementation and deployment and communication of results to decision makers. This course will discuss these steps - some of them in very details, while some others with pointers to other courses in the MSc in Business Analytics program for further coverage.
 
 A large part of this current course will be dedicated to advanced statistical modeling / *machine learning* / predictive analytics. We will discuss methods for supervised learning such as neural networks, decision trees, naive Bayes, k-nearest neighbors, support vector machines, random forests or gradient boosted machines. We will discuss important issues regarding model evaluation and validation (bias and variance, overfitting, training and test error, regularization, cross-validation, data leakage etc.). We will also cover methods for unsupervised learning such as principal component analysis and clustering (k-means, hierarchical).
 
