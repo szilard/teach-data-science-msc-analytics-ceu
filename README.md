@@ -41,11 +41,13 @@ A large part of this current course will be dedicated to advanced statistical mo
 
 Other topics, equally important for Data Science will be just briefly discussed here with more details following in other courses. For example, students will get hands-on experience with *exploratory data analysis*, *data manipulation/preparation* and cleaning, *data visualization*, *programming* with data and tools that help *reproducibility* in the Tools for Analytics Lab (the R Track). Data storage, databases, data transformations (data pipelines/ETL) and SQL will be discussed in The Big Data Computing course (also providing a *systems* view). *Data visualization* (a very important component in exploratory data analysis and also in the communication of results to decision makers) will be discussed in further details in the Data Visualization elective course (highly recommended). Some of the more traditional *statistical modeling* topics (such as linear regression) have been already covered in the Data Analysis I and II courses.
 
+
 #### Assessment:
 
 - 10% class participation
 - 50% final exam
 - 40% data analysis project
+
 
 #### Course schedule and reading for each session:
 
@@ -53,12 +55,18 @@ Other topics, equally important for Data Science will be just briefly discussed 
 
 Foster Provost, Tom Fawcett: [Data Science for Business](http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323), Ch. 2 (pp. 19-41)
 
+[Slides](https://docs.google.com/presentation/d/1aPymN2aJlqLigLin_IaEPAee0V17EPkfvvyPLq9X6dA/edit?usp=sharing)
+
+
 **2.** [DS] Tools for Data Science (R/Python, databases). Exploratory data analysis. Data preparation/munging. Data visualization. Tools for workflow/reproducibility/productivity
 
 Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: 
 [Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) (pp. 1-10)
 
 Rexer Analytics: [2013 Data Miner Survey (Summary Report)](http://www.rexeranalytics.com/Data-Miner-Survey-Results-2013.html) (pp. 8, 9, 12, 16, 31, 35)
+
+[Slides](https://docs.google.com/presentation/d/1rsoJRnLjKojbpc-nb9y-t-0410rBDLIb_2oTL4pSH7M/edit?usp=sharing)
+
 
 **3.** [ML] **Supervised learning**. Linear models vs k-nearest neighbors (bias, variance). An overview of supervised learning methods (with details in the following 3 sessions). Linear regression. Ridge regression and Lasso (regularization). Logistic regression
 
@@ -68,11 +76,13 @@ Leo Breiman: [Statistical Modeling: The Two Cultures](http://projecteuclid.org/e
 
 [Demo code](machine_learning_code/1-intro+linear)
 
+
 **4.** [ML] Decision trees. Bagging. Random forests. GBM. Ensembles I.
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), 2nd Edition, Ch. 9 (pp. 295, 305-312), Ch. 8 (pp. 282-286), Ch. 15 (pp. 587-594), Ch. 10 (pp. 337-340)
 
 [Demo code](machine_learning_code/2-trees+ensembles/)
+
 
 **5.** [ML] **Model evaluation and validation**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
 
