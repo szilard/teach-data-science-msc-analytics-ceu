@@ -11,7 +11,8 @@ dim(d_test)
 
 # parallel grid search in caret
 library(doMC)
-registerDoMC(cores = 2)
+parallel::detectCores()
+registerDoMC(cores = 4)
 
 system.time({
 mds <- train(as.factor(spam) ~ ., data = d_train,
