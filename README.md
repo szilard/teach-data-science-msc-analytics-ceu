@@ -16,7 +16,7 @@ rest to an overview of the entire data science landscape with topics such as exp
 (and discussing how to get details from the other courses).
 
 My views on what a full data science curriculum 
-should be are briefly expressed below
+should be are briefly expressed in the "Course focus and description" below
 and a bit further in [this post](https://github.com/szilard/datascience-course-historical).
 
 -------------------------------------------------------------
@@ -33,7 +33,7 @@ and a bit further in [this post](https://github.com/szilard/datascience-course-h
 - **Instructor:** Szilard Pafka
 
 
-#### Course description:
+#### Course focus and description:
 
 This course will provide a brief overview of Data Science, the field aimed at extracting business value from data. Despite the new name and the recent hype, Data Science is actually not new, it has solid foundations in *statistics* and *computing technology* that go back several decades. A Data Science project usually involves several iterations of the following steps: business understanding, data acquisition, exploratory data analysis, data cleaning, feature engineering, advanced statistical modeling, model validation, technical implementation and deployment and communication of results to decision makers. This course will discuss these steps - some of them in very details, while some others with pointers to other courses in the MSc in Business Analytics program for further coverage.
 
@@ -49,7 +49,7 @@ Other topics, equally important for Data Science will be just briefly discussed 
 - 40% data analysis project
 
 
-#### Course schedule and reading for each session:
+#### Course schedule and materials for each session:
 
 **1.** [DS] **The Data Science process**: business understanding, data acquisition, exploratory data analysis, data cleaning, feature engineering, advanced statistical modeling, model validation, technical implementation and deployment, communication of results to decision makers.
 
