@@ -70,7 +70,7 @@ Rexer Analytics: [2013 Data Miner Survey (Summary Report)](http://www.rexeranaly
 
 **3.** [ML] **Supervised learning**. Linear models vs k-nearest neighbors (bias, variance). An overview of supervised learning methods (with details in the following 3 sessions). Linear regression. Ridge regression and Lasso (regularization). Logistic regression
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd Edition](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 2 (pp. 9-24, 28-30), Ch. 3 (pp. 43-45, 47, 51-52, 57, 62-65, 68-69, 71), Ch. 4 (pp. 119-120)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 2 (pp. 9-24, 28-30), Ch. 3 (pp. 43-45, 47, 51-52, 57, 62-65, 68-69, 71), Ch. 4 (pp. 119-120)
 
 Leo Breiman: [Statistical Modeling: The Two Cultures](http://projecteuclid.org/euclid.ss/1009213726) (pp. 199, 202-205)
 
