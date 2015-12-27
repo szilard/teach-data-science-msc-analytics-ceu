@@ -16,7 +16,7 @@ rest to an overview of the entire data science landscape with topics such as exp
 (and discussing how to get details from the other courses).
 
 My views on what a full data science curriculum 
-should be are briefly expressed in the "Course focus and description" below
+should be are briefly expressed in the "Course focus and description" section below
 and a bit further in [this post](https://github.com/szilard/datascience-course-historical).
 
 -------------------------------------------------------------
