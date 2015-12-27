@@ -17,7 +17,7 @@ rest to an overview of data science with topics such as exploratory data analysi
 
 My views on what a more overreaching data science curriculum 
 should be are briefly expressed below
-and also in [this post](https://github.com/szilard/datascience-course-historical).
+and a bit further in [this post](https://github.com/szilard/datascience-course-historical).
 
 -------------------------------------------------------------
 
