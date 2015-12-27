@@ -1,5 +1,5 @@
 
-### Data Science Course
+## Data Science Course
 
 This repo contains materials for a short introductory/intermediate 
 Data Science course taught in the new (2015) 
