@@ -12,8 +12,8 @@ students with varying analytical background. As most data science topics except
 machine learning are covered (to some extent) in other courses in the program, 
 I decided to spend 60-70% of the available time on *machine learning*. 
 Yet, I'm still dedicating the 
-rest to an overview of data science with topics such as exploratory data analysis, data visualization, reproducibility, tools for data analysis etc. 
-(and emphasizing how to get more details from the other courses and how all these come together).
+rest to an overview of the entire data science landscape with topics such as exploratory data analysis, data visualization, reproducibility, tools for data analysis etc. 
+(and discussing how to get details from the other courses).
 
 My views on what a more overreaching data science curriculum 
 should be are briefly expressed below
