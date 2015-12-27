@@ -70,7 +70,7 @@ Rexer Analytics: [2013 Data Miner Survey (Summary Report)](http://www.rexeranaly
 
 **3.** [ML] **Supervised learning**. Linear models vs k-nearest neighbors (bias, variance). An overview of supervised learning methods (with details in the following 3 sessions). Linear regression. Ridge regression and Lasso (regularization). Logistic regression
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), 2nd Edition, Ch. 2 (pp. 9-24, 28-30), Ch. 3 (pp. 43-45, 47, 51-52, 57, 62-65, 68-69, 71), Ch. 4 (pp. 119-120)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd Edition](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 2 (pp. 9-24, 28-30), Ch. 3 (pp. 43-45, 47, 51-52, 57, 62-65, 68-69, 71), Ch. 4 (pp. 119-120)
 
 Leo Breiman: [Statistical Modeling: The Two Cultures](http://projecteuclid.org/euclid.ss/1009213726) (pp. 199, 202-205)
 
@@ -79,18 +79,25 @@ Leo Breiman: [Statistical Modeling: The Two Cultures](http://projecteuclid.org/e
 
 **4.** [ML] Decision trees. Bagging. Random forests. GBM. Ensembles I.
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), 2nd Edition, Ch. 9 (pp. 295, 305-312), Ch. 8 (pp. 282-286), Ch. 15 (pp. 587-594), Ch. 10 (pp. 337-340)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd Edition](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 9 (pp. 295, 305-312), Ch. 8 (pp. 282-286), Ch. 15 (pp. 587-594), Ch. 10 (pp. 337-340)
 
 [Demo code](machine_learning_code/2-trees+ensembles/)
 
 
 **5.** [ML] **Model evaluation and validation**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), 2nd Edition, Ch. 7 (pp. 219-223, 241-242, 244)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd Edition](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-223, 241-242, 244)
 
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
 [Demo code](machine_learning_code/3-model_eval)
+
+
+**6.** [ML] [Supervised Learning continued] Naive Bayes. Neural networks. SVM. Deep Learning. Ensembles II.
+
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd Edition](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408), Ch. 12 (pp. 417-426)
+
+[Demo code](machine_learning_code/4-nb+nn+svm)
 
 ...
 
