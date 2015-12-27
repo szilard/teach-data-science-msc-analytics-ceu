@@ -15,7 +15,7 @@ Yet, I'm still dedicating the
 rest to an overview of data science with topics such as exploratory data analysis, data visualization, reproducibility, tools for data analysis etc. 
 (and emphasizing how to get more details from the other courses and how all these come together).
 
-My views on what a more overeaching data science curriculum 
+My views on what a more overreaching data science curriculum 
 should be are briefly expressed below
 and also in [this post](https://github.com/szilard/datascience-course-historical).
 
@@ -27,7 +27,7 @@ and also in [this post](https://github.com/szilard/datascience-course-historical
 
 #### Course: Data Science for Business
 
-- **Term:** Winter 2015
+- **Term:** Winter 2015-2016
 - **Credits:** 2 (4 ECTS) 
 - **Department:** Department of Economics / CEU Business School
 - **Instructor:** Szilard Pafka
