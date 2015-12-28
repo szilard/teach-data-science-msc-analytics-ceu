@@ -1,7 +1,7 @@
 
 ## Data Science Course
 
-This repo contains materials for a short introductory/intermediate 
+This repo contains materials for an introductory/intermediate 
 Data Science course taught in the new (2015) 
 [MSc in Business Analytics program](http://business.ceu.edu/msc-in-business-analytics) 
 at the Central European University (CEU).
