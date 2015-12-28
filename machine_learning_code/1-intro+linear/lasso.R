@@ -1,7 +1,8 @@
 
-set.seed(123)
 library(glmnet)
 library(MASS)
+
+set.seed(123)
 
 n1 <- 300
 n2 <- 1000
