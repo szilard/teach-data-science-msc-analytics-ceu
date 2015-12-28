@@ -6,7 +6,7 @@ set.seed(123)
 dim(d_train)
 dim(d_test)
 
-md <- nnet(as.factor(spam) ~ ., data = d_train, 
+md <- nnet(spam ~ ., data = d_train, 
            size = 10, decay = 0.1,
            maxit = 1000, MaxNWts = 1000)
 

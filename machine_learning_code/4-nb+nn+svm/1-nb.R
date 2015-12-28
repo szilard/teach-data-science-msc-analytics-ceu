@@ -6,7 +6,7 @@ set.seed(123)
 dim(d_train)
 dim(d_test)
 
-md <- naiveBayes(as.factor(spam) ~ ., data = d_train)
+md <- naiveBayes(spam ~ ., data = d_train)
 
 yhat <- predict(md, newdata = d_test)
 sum(yhat!=d_test$spam)/nrow(d_test)

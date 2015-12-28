@@ -6,7 +6,7 @@ set.seed(123)
 dim(d_train)
 dim(d_test)
 
-md <- svm(as.factor(spam) ~ ., data = d_train,
+md <- svm(spam ~ ., data = d_train,
           kernel = "radial", gamma = 1/p, cost = 1)
 
 yhat <- predict(md, newdata = d_test)
@@ -15,7 +15,7 @@ sum(yhat!=d_test$spam)/nrow(d_test)
 
 # grid search
 system.time({
-mds <- tune.svm(as.factor(spam) ~ ., data = d_train,
+mds <- tune.svm(spam ~ ., data = d_train,
                 gamma = 10^(-5:1), cost = 10^(-1:5), 
                 tunecontrol = tune.control(cross = 5))
 })
