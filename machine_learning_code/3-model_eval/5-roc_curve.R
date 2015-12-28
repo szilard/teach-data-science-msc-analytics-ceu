@@ -8,7 +8,7 @@ set.seed(123)
 dim(d_train)
 dim(d_test)
 
-md <- randomForest(as.factor(spam) ~ ., data = d_train, ntree = 100)
+md <- randomForest(spam ~ ., data = d_train, ntree = 100)
 md
 
 phat <- predict(md, d_test, type = "prob")[,"1"]

@@ -6,9 +6,13 @@ set.seed(123)
 dim(d_train)
 dim(d_test)
 
+# gbm needs numeric y
+d_train_ynum <- d_train
+d_train_ynum$spam <- ifelse(d_train_ynum$spam=="1",1,0)
+
 args(gbm)
 
-md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+md <- gbm(spam ~ ., data = d_train_ynum, distribution = "bernoulli",
           n.trees = 100, interaction.depth = 10, shrinkage = 0.3)
 
 # train err
@@ -30,8 +34,8 @@ table(folds)
 err_fold <- numeric(K)
 for (k in 1:K) {
 
-  d_fold_train <- d_train[folds!=k,]
-  d_fold_test  <- d_train[folds==k,]
+  d_fold_train <- d_train_ynum[folds!=k,]
+  d_fold_test  <- d_train_ynum[folds==k,]
   
   md <- gbm(spam ~ ., data = d_fold_train, distribution = "bernoulli",
           n.trees = 100, interaction.depth = 10, shrinkage = 0.3)
@@ -45,7 +49,7 @@ mean(err_fold)
 
 
 # build-in cross validation (+model selection)
-md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+md <- gbm(spam ~ ., data = d_train_ynum, distribution = "bernoulli",
           n.trees = 100, interaction.depth = 10, shrinkage = 0.3,
           cv.folds = 5)
 gbm.perf(md, plot.it = TRUE)

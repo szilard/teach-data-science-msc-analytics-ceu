@@ -6,7 +6,11 @@ set.seed(123)
 dim(d_train)
 dim(d_test)
 
-md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+# gbm needs numeric y
+d_train_ynum <- d_train
+d_train_ynum$spam <- ifelse(d_train_ynum$spam=="1",1,0)
+
+md <- gbm(spam ~ ., data = d_train_ynum, distribution = "bernoulli",
           n.trees = 100, interaction.depth = 10, shrinkage = 0.01)
 md
 
@@ -15,12 +19,12 @@ table(ifelse(yhat>0,1,0), d_test$spam)
 
 args(gbm)
 
-md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+md <- gbm(spam ~ ., data = d_train_ynum, distribution = "bernoulli",
           n.trees = 100, interaction.depth = 10, shrinkage = 0.01,
           cv.folds = 5)
 gbm.perf(md, plot.it = TRUE)
 
-md <- gbm(spam ~ ., data = d_train, distribution = "bernoulli",
+md <- gbm(spam ~ ., data = d_train_ynum, distribution = "bernoulli",
           n.trees = 100, interaction.depth = 10, shrinkage = 0.3,
           cv.folds = 5)
 gbm.perf(md, plot.it = TRUE)
@@ -33,7 +37,4 @@ yhat <- predict(md, d_test, n.trees = gbm.perf(md, plot.it = FALSE))
 table(ifelse(yhat>0,1,0), d_test$spam)
 
 # more tweaking of params see later
-
-
-
 
