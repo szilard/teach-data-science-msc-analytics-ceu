@@ -11,11 +11,10 @@ dim(d_test)
 
 # parallel grid search in caret
 library(doMC)
-parallel::detectCores()
-registerDoMC(cores = 4)
+registerDoMC(cores = parallel::detectCores())
 
 system.time({
-mds <- train(as.factor(spam) ~ ., data = d_train,
+mds <- train(spam ~ ., data = d_train,
              method = "svmRadial",  # uses package kernlab (not e1071)
              tuneGrid = expand.grid(sigma = 10^(-5:1), C = 10^(-1:5)),
              trControl = trainControl(method = "cv", number = 5))
