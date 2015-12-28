@@ -29,6 +29,7 @@ cor(phat)
 
 # model averaging
 phat <- rowMeans(phat)
+head(phat)
 sum(ifelse(phat>0.5,1,0)!=d_test$spam)/nrow(d_test)
 
 
