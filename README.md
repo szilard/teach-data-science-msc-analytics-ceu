@@ -84,7 +84,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 [Demo code](machine_learning_code/2-trees+ensembles/)
 
 
-**5.** [ML] **Model evaluation and validation**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
+**5.** [ML] **Model evaluation and selection**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-223, 241-242, 244)
 
@@ -99,12 +99,16 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 [Demo code](machine_learning_code/4-nb+nn+svm)
 
-**7.** ...
+**7.** [DS/ML] An example **data analysis project**
 
-**8.** ...
+**8.** [ML] Unsupervised learning. Clustering (k-means, hierarchical). Principal component analysis
 
-**9.** ...
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: The Elements of Statistical Learning, 2nd Edition, Ch. 14 (pp. 485-487, 502-513, 520-525)
 
-**10.** ...
+**9.** [DS/ML] Q&A. Discuss requirements for the homework **data analysis project**
+
+**10.** [X] Other miscellaneous topics: text mining/NLP, networks, geo, time series, recommender systems, A/B testing etc.
+
+David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
 
