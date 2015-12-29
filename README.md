@@ -105,7 +105,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: The Elements of Statistical Learning, 2nd Edition, Ch. 14 (pp. 485-487, 502-513, 520-525)
 
-**9.** [DS/ML] **Q&A**. Discuss requirements for the homework **data analysis project**
+**9.** [DS/ML] **Q&A**. Discuss requirements for the homework data analysis project
 
 **10.** [X] Other miscellaneous topics: text mining/NLP, networks, geo, time series, recommender systems, A/B testing etc.
 
