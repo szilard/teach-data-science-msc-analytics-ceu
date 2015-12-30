@@ -103,7 +103,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 **8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical). Principal component analysis
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: The Elements of Statistical Learning, 2nd Edition, Ch. 14 (pp. 485-487, 502-513, 520-525)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: The Elements of Statistical Learning, 2nd Edition, Ch. 14 (pp. 485-487, 502-513, 520-525, 534-538)
 
 **9.** [DS/ML] **Q&A**. Discuss requirements for the homework data analysis project
 
