@@ -30,19 +30,21 @@ dend %>% set("labels", NA) %>% hang.dendrogram(0) %>% plot
 
 
 # for this problem we know the "true" clusters
-c0 <- iris[,5]
+c0_rn <- iris[,5]    # index by orig iris row numbers
 
 dend %>% set("labels", NA) %>% 
   set("leaves_pch", 1) %>% set("leaves_cex", 0.4) %>%  
-  set("leaves_col", as.numeric(c0[as.numeric(labels(dend))])) %>% 
+  set("leaves_col", as.numeric(c0_rn[as.numeric(labels(dend))])) %>% 
   hang.dendrogram(0) %>% plot
 
+ck3 <- cutree(dend, k = 3)
+table(c0_rn[as.numeric(names(ck3))], ck3)
 
 for (m in c("average","complete","single")) {
 d %>% dist %>% hclust(method = m) %>% as.dendrogram %>% 
   set("labels", NA) %>% 
   set("leaves_pch", 1) %>% set("leaves_cex", 0.4) %>%  
-  set("leaves_col", as.numeric(c0[as.numeric(labels(dend))])) %>% 
+  set("leaves_col", as.numeric(c0_rn[as.numeric(labels(dend))])) %>% 
   hang.dendrogram(0) %>% plot(main = m)
 }  
   
