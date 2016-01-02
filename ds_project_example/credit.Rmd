@@ -1,0 +1,429 @@
+
+
+Data analysis project example
+=============================
+
+
+```{r echo=FALSE, message=FALSE}
+
+library(readr)
+library(dplyr)
+library(reshape2)
+library(ggplot2)
+
+library(knitr)
+opts_knit$set(root.dir = "../")
+
+```
+
+
+Exploratory Analysis
+--------------------
+
+
+### Read data, quick look
+
+```{r}
+
+d <- read_csv("ds_project_example/data/credit.csv")
+dim(d)
+head(d)
+d[[1]] <- NULL
+dim(d)
+head(d)
+str(d)
+colnames(d)
+
+summary(d)
+
+sapply(d, function(x) sum(is.na(x)))   ## NAs: MonthlyIncome, NumberOfDependents
+
+sapply(d, function(x) sum(x<0, na.rm=TRUE))    ## always >= 0 
+
+eps <- 1e-4
+d %>% melt(id.vars = "SeriousDlqin2yrs") %>% tbl_df %>%
+ ggplot() + geom_histogram(aes(x = value+eps, fill = as.factor(SeriousDlqin2yrs))) +
+   facet_wrap(~ variable, scales = "free") + scale_x_log10()
+
+```
+
+
+### Target variable: SeriousDlqin2yrs
+
+Person experienced 90 days past due delinquency or worse 
+
+```{r}
+
+summary(d$SeriousDlqin2yrs)
+
+table(d$SeriousDlqin2yrs)
+
+d %>% group_by(SeriousDlqin2yrs) %>% summarize(n = n()) %>% mutate(pc = n/sum(n)*100)
+
+```
+
+
+
+### Predictor: RevolvingUtilizationOfUnsecuredLines
+
+Total balance on credit cards and personal lines of credit except real estate 
+and no installment debt like car loans divided by the sum of credit limits
+(percentage)
+
+```{r}
+
+summary(d$RevolvingUtilizationOfUnsecuredLines)
+
+ggplot(d) + geom_histogram(aes(x = RevolvingUtilizationOfUnsecuredLines+eps)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + scale_x_log10()
+
+d %>% filter(RevolvingUtilizationOfUnsecuredLines>1) %>% 
+  group_by(SeriousDlqin2yrs) %>% summarize(n = n())
+
+d %>% filter(RevolvingUtilizationOfUnsecuredLines>3) %>% 
+  group_by(SeriousDlqin2yrs) %>% summarize(n = n())
+
+ggplot(d) + geom_histogram(aes(x = RevolvingUtilizationOfUnsecuredLines)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,1.5))
+
+d %>% group_by(SeriousDlqin2yrs) %>% 
+  summarize(max = max(RevolvingUtilizationOfUnsecuredLines))
+
+d %>% filter(RevolvingUtilizationOfUnsecuredLines>10) %>% 
+  select(SeriousDlqin2yrs, RevolvingUtilizationOfUnsecuredLines)
+
+```
+
+**Notes/TODO:** clean up outliers
+
+Options:
+
+1. find the errors upstream, correct them
+2. truncate for NN/SVM (can leave it for RF/GBM)
+
+
+
+### Predictor: age
+
+Age of borrower in years
+
+```{r}
+
+summary(d$age)
+
+ggplot(d) + geom_histogram(aes(x = age)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free")
+
+d %>% filter(age<18) %>% 
+  group_by(SeriousDlqin2yrs) %>% summarize(n = n())
+
+d %>% filter(age>90) %>% 
+  group_by(SeriousDlqin2yrs) %>% summarize(n = n())
+
+```
+
+
+
+### Predictor: NumberOfTime30-59DaysPastDueNotWorse
+
+Number of times borrower has been 30-59 days past due but no worse in the last 2 years.
+
+```{r}
+
+summary(d$`NumberOfTime30-59DaysPastDueNotWorse`)
+
+ggplot(d) + geom_histogram(aes(x = `NumberOfTime30-59DaysPastDueNotWorse`)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free")
+
+ggplot(d) + geom_histogram(aes(x = `NumberOfTime30-59DaysPastDueNotWorse`+eps)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + scale_x_log10()
+
+table(d$`NumberOfTime30-59DaysPastDueNotWorse`)
+
+d %>% group_by(SeriousDlqin2yrs, `NumberOfTime30-59DaysPastDueNotWorse`) %>% 
+  summarize(n = n()) %>% as.data.frame
+
+ggplot(d) + geom_histogram(aes(x = `NumberOfTime30-59DaysPastDueNotWorse`)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,8))
+
+```
+
+**Notes/TODO:** 96,98 is encoding something - needs clean up
+
+
+
+### Predictor: DebtRatio
+
+Monthly debt payments, alimony, living costs divided by monthy gross income (percentage)
+
+```{r}
+
+summary(d$DebtRatio)
+
+ggplot(d) + geom_histogram(aes(x = DebtRatio)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free")
+
+ggplot(d) + geom_histogram(aes(x = DebtRatio+eps)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + scale_x_log10()
+
+ggplot(d) + geom_histogram(aes(x = DebtRatio)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,2))
+
+ggplot(d) + geom_histogram(aes(x = DebtRatio)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(10,10000))
+
+```
+
+**Notes/TODO:** sometimes ratio, sometimes basis points? - needs cleanup
+
+
+
+### Predictor: MonthlyIncome
+
+Monthly income
+
+```{r}
+
+summary(d$MonthlyIncome)
+
+ggplot(d) + geom_histogram(aes(x = MonthlyIncome + eps)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + scale_x_log10()
+
+d %>% filter(MonthlyIncome < 100) %>% 
+  group_by(SeriousDlqin2yrs, MonthlyIncome) %>% summarize(n = n()) %>% as.data.frame
+
+d %>% filter(is.na(MonthlyIncome)) %>% 
+  group_by(SeriousDlqin2yrs) %>% summarize(n = n()) %>% as.data.frame
+
+ggplot(d) + geom_histogram(aes(x = MonthlyIncome + eps)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + scale_x_log10(limits = c(3e2,3e4))
+
+d %>% filter(MonthlyIncome > 1e6) %>% select(SeriousDlqin2yrs, MonthlyIncome) %>% 
+  as.data.frame
+
+```
+
+**Notes/TODO:** income is sometimes 0,1 or NA
+
+
+### Predictor: NumberOfOpenCreditLinesAndLoans
+
+Number of Open loans (installment like car loan or mortgage) and 
+Lines of credit (e.g. credit cards)
+
+```{r}
+
+summary(d$NumberOfOpenCreditLinesAndLoans)
+
+ggplot(d) + geom_histogram(aes(x = NumberOfOpenCreditLinesAndLoans)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") 
+
+```
+
+
+
+### Predictor: NumberOfTimes90DaysLate
+
+Number of times borrower has been 90 days or more past due.
+
+```{r}
+
+summary(d$NumberOfTimes90DaysLate)
+
+ggplot(d) + geom_histogram(aes(x = NumberOfTimes90DaysLate)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") 
+
+ggplot(d) + geom_histogram(aes(x = NumberOfTimes90DaysLate+eps)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + scale_x_log10()
+
+ggplot(d) + geom_histogram(aes(x = NumberOfTimes90DaysLate)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,10)) 
+
+d %>% group_by(SeriousDlqin2yrs, `NumberOfTimes90DaysLate`) %>% 
+  summarize(n = n()) %>% as.data.frame
+
+```
+
+**Notes/TODO:** 96/98
+
+
+
+### Predictor: NumberRealEstateLoansOrLines
+
+Number of mortgage and real estate loans including home equity lines of credit
+
+```{r}
+
+summary(d$NumberRealEstateLoansOrLines)
+
+ggplot(d) + geom_histogram(aes(x = NumberRealEstateLoansOrLines)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") 
+
+d %>% group_by(SeriousDlqin2yrs, NumberRealEstateLoansOrLines) %>% 
+  summarize(n = n()) %>% as.data.frame
+
+ggplot(d) + geom_histogram(aes(x = NumberRealEstateLoansOrLines)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,10))
+
+```
+
+
+### Predictor: NumberOfTime60-89DaysPastDueNotWorse
+
+Number of times borrower has been 60-89 days past due but no worse in the last 2 years.
+
+```{r}
+
+summary(d$`NumberOfTime60-89DaysPastDueNotWorse`)
+
+ggplot(d) + geom_histogram(aes(x = `NumberOfTime60-89DaysPastDueNotWorse`)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") 
+
+d %>% group_by(SeriousDlqin2yrs, `NumberOfTime60-89DaysPastDueNotWorse`) %>% 
+  summarize(n = n()) %>% as.data.frame
+
+ggplot(d) + geom_histogram(aes(x = `NumberOfTime60-89DaysPastDueNotWorse`)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,6))
+
+```
+
+**Notes/TODO:** 96/98
+
+
+
+### Predictor: NumberOfDependents
+
+Number of dependents in family excluding themselves (spouse, children etc.)
+
+```{r}
+
+summary(d$NumberOfDependents)
+
+ggplot(d) + geom_histogram(aes(x = NumberOfDependents)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") 
+
+d %>% group_by(SeriousDlqin2yrs, NumberOfDependents) %>% 
+  summarize(n = n()) %>% as.data.frame
+
+ggplot(d) + geom_histogram(aes(x = NumberOfDependents)) +
+  facet_grid(SeriousDlqin2yrs~., scales = "free") + xlim(c(0,6))
+
+```
+
+**Notes/TODO:** Deal with NAs
+
+
+
+### Split train/test (could do CV etc.)
+
+```{r}
+
+d <- d %>% rename(NumberOfTime3059DaysPastDueNotWorse = `NumberOfTime30-59DaysPastDueNotWorse`,
+                  NumberOfTime6089DaysPastDueNotWorse = `NumberOfTime60-89DaysPastDueNotWorse`)
+colnames(d)
+
+set.seed(123)
+N <- nrow(d)
+idx_train <- sample(1:N,N/2)
+idx_valid <- sample(base::setdiff(1:N, idx_train), N/4)
+idx_test <- base::setdiff(base::setdiff(1:N, idx_train),idx_valid)
+d_train <- d[idx_train,]
+d_valid <- d[idx_valid,]
+d_test  <- d[idx_test,]
+
+```
+
+
+Data Cleaning
+-------------
+
+... (based on the **Notes** above)
+
+
+
+Feature Engineering
+-------------------
+
+...
+
+
+
+
+Modeling
+--------
+
+
+[H2O](http://h2o.ai/) is a powerful open source machine learning platform with R API
+
+
+### Setup
+
+```{r message=FALSE, results='hide'}
+
+library(h2o)
+
+h2o.init(max_mem_size = "4g", nthreads = -1)   ## starts Java server (R connects via REST)
+
+dx_train <- as.h2o(d_train)  ## uploads data to H2O
+dx_train$SeriousDlqin2yrs <- as.factor(dx_train$SeriousDlqin2yrs)
+dx_valid <- as.h2o(d_valid)
+dx_valid$SeriousDlqin2yrs <- as.factor(dx_valid$SeriousDlqin2yrs)
+dx_test <- as.h2o(d_test)
+dx_test$SeriousDlqin2yrs <- as.factor(dx_test$SeriousDlqin2yrs)
+
+```
+
+You can see/check/examine the data in the H2O (Web-based) 
+UI (flow) http://localhost:54321 (or appropriate host)
+
+
+
+### Random forest
+
+```{r results='hide'}
+
+system.time({
+  md <- h2o.randomForest(x = 2:ncol(dx_train), y = 1, 
+        training_frame = dx_train, 
+        ntrees = 100, nbins = 100)
+})
+
+```
+
+```{r}
+
+md
+
+h2o.auc(md) 
+h2o.auc(h2o.performance(md, dx_test))
+
+```
+
+You can examine model in the UI http://localhost:54321
+
+
+### GBM
+
+```{r results='hide'}
+
+system.time({
+  md <- h2o.gbm(x = 2:ncol(dx_train), y = 1, 
+        training_frame = dx_train, validation_frame = dx_valid,
+        max_depth = 15, ntrees = 100, learn_rate = 0.1, nbins = 100,
+        stopping_rounds = 3, stopping_tolerance = 1e-3)
+})
+
+```
+
+```{r}
+
+md
+
+h2o.auc(md)
+h2o.auc(h2o.performance(md, dx_valid))
+h2o.auc(h2o.performance(md, dx_test))
+
+```
+
+
+
