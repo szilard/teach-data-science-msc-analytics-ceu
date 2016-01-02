@@ -385,7 +385,7 @@ UI (flow) http://localhost:54321 (or appropriate host)
 system.time({
   md <- h2o.randomForest(x = 2:ncol(dx_train), y = 1, 
         training_frame = dx_train, 
-        ntrees = 100, nbins = 100)
+        ntrees = 500, nbins = 200)
 })
 
 ```
@@ -409,7 +409,7 @@ You can examine model in the UI http://localhost:54321
 system.time({
   md <- h2o.gbm(x = 2:ncol(dx_train), y = 1, 
         training_frame = dx_train, validation_frame = dx_valid,
-        max_depth = 15, ntrees = 100, learn_rate = 0.1, nbins = 100,
+        max_depth = 15, ntrees = 500, learn_rate = 0.01, nbins = 200,
         stopping_rounds = 3, stopping_tolerance = 1e-3)
 })
 
@@ -420,7 +420,6 @@ system.time({
 md
 
 h2o.auc(md)
-h2o.auc(h2o.performance(md, dx_valid))
 h2o.auc(h2o.performance(md, dx_test))
 
 ```
