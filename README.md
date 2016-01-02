@@ -101,7 +101,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 **7.** [DS/ML] An example **data analysis project**
 
-[Demo](ds_project_example)
+[Demo code](ds_project_example)
 
 **8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical). Principal component analysis
 
