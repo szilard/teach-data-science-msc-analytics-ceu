@@ -384,8 +384,8 @@ UI (flow) http://localhost:54321 (or appropriate host)
 
 system.time({
   md <- h2o.randomForest(x = 2:ncol(dx_train), y = 1, 
-        training_frame = dx_train, 
-        ntrees = 500, nbins = 200)
+            training_frame = dx_train, 
+            mtries = -1, ntrees = 500, max_depth = 20, nbins = 200)
 })
 
 ```
