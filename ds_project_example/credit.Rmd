@@ -425,7 +425,32 @@ h2o.auc(h2o.performance(md, dx_test))
 ```
 
 
-### Grid search
+### GBM with cross validation
+
+```{r results='hide'}
+
+system.time({
+  md <- h2o.gbm(x = 2:ncol(dx_train), y = 1, 
+          training_frame = dx_train, 
+          max_depth = 15, ntrees = 500, learn_rate = 0.01, nbins = 200,
+          nfolds = 5,
+          stopping_rounds = 3, stopping_tolerance = 1e-3)
+})
+
+
+```
+
+```{r}
+
+md
+
+h2o.auc(md)
+h2o.auc(h2o.performance(md, dx_test))
+
+```
+
+
+### GBM with grid search
 
 ```{r results='hide'}
 
@@ -455,3 +480,53 @@ do.call(rbind, lapply(gmd@model_ids, function(m_id) {
 })) %>% arrange(desc(auc)) 
 
 ```
+
+
+
+### Neural networks
+
+```{r results='hide'}
+
+system.time({
+  md <- h2o.deeplearning(x = 2:ncol(dx_train), y = 1, 
+          training_frame = dx_train, validation_frame = dx_valid,
+          activation = "Rectifier", hidden = c(200,200), epochs = 100,
+          stopping_rounds = 3, stopping_tolerance = 0)
+})
+
+```
+
+```{r}
+
+md
+
+h2o.auc(md)
+h2o.auc(h2o.performance(md, dx_test))
+
+```
+
+
+### Neural networks with regularization
+
+```{r results='hide'}
+
+system.time({
+  md <- h2o.deeplearning(x = 2:ncol(dx_train), y = 1, 
+          training_frame = dx_train, validation_frame = dx_valid,
+          activation = "RectifierWithDropout", hidden = c(200,200), epochs = 100,
+          input_dropout_ratio = 0.2, hidden_dropout_ratios = c(0.2,0.2),
+          l1 = 1e-4, l2 = 1e-4,
+          stopping_rounds = 3, stopping_tolerance = 0)
+})
+
+```
+
+```{r}
+
+md
+
+h2o.auc(md)
+h2o.auc(h2o.performance(md, dx_test))
+
+```
+
