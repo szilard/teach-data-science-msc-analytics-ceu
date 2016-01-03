@@ -483,7 +483,7 @@ do.call(rbind, lapply(gmd@model_ids, function(m_id) {
 
 
 
-### Neural networks
+### Neural network
 
 ```{r results='hide'}
 
@@ -506,7 +506,7 @@ h2o.auc(h2o.performance(md, dx_test))
 ```
 
 
-### Neural networks with regularization
+### Neural network with regularization (L1, L2, dropout)
 
 ```{r results='hide'}
 
