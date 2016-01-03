@@ -425,4 +425,33 @@ h2o.auc(h2o.performance(md, dx_test))
 ```
 
 
+### Grid search
 
+```{r results='hide'}
+
+system.time({
+  gmd <- h2o.grid("gbm", x = 2:ncol(dx_train), y = 1, 
+            training_frame = dx_train, validation_frame = dx_valid,
+            hyper_params = list(ntrees = 500,
+                                max_depth = c(5,10,20),
+                                learn_rate = c(0.01,0.1),
+                                nbins = 200),
+            stopping_rounds = 5, stopping_tolerance = 1e-3)
+})
+
+```
+
+```{r}
+
+gmd
+
+do.call(rbind, lapply(gmd@model_ids, function(m_id) {
+  mm <- h2o.getModel(m_id)
+  hyper_params <- mm@allparameters
+  data.frame(m_id = m_id, 
+             auc = h2o.performance(mm, dx_test)@metrics$AUC,
+             max_depth = hyper_params$max_depth,
+             learn_rate = hyper_params$learn_rate )
+})) %>% arrange(desc(auc)) 
+
+```
