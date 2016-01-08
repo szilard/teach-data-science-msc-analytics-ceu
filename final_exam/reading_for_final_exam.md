@@ -28,7 +28,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 [Demo code](../machine_learning_code/2-trees+ensembles/)
 
 
-**5.** [ML] **Model evaluation and selection**: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
+**5.** [ML] Model evaluation and selection: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242)
 
@@ -37,7 +37,7 @@ Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised 
 [Demo code](../machine_learning_code/3-model_eval)
 
 
-**6.** [ML] [Supervised Learning continued] Neural networks. SVM. Deep Learning. Ensembles II.
+**6.** [ML] Neural networks. SVM. Deep Learning. Ensembles II.
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408), Ch. 12 (pp. 417-426)
 
