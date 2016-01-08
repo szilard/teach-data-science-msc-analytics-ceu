@@ -28,12 +28,9 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 [Demo code](../machine_learning_code/2-trees+ensembles/)
 
 
----------------------------------
+**5.** [ML] **Model evaluation and selection**: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
 
-
-**5.** [ML] **Model evaluation and selection**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
-
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-223, 241-242, 244)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242)
 
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
@@ -45,9 +42,6 @@ Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408), Ch. 12 (pp. 417-426)
 
 [Demo code](machine_learning_code/4-nb+nn+svm)
-
-
----------------------------------
 
 
 **8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical)
