@@ -5,7 +5,7 @@
 
 **2.** Why is exploratory data analysis a crucial step in any data analysis?
 
-**3.** Why is data visualization useful?
+**3.** Why is data visualization useful for data analysis?
 
 **4.** Why are tools developed for reproducible research useful in business data analysis workflows?
 
