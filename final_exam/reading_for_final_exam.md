@@ -41,7 +41,7 @@ Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised 
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408), Ch. 12 (pp. 417-426)
 
-[Demo code](machine_learning_code/4-nb+nn+svm)
+[Demo code](../machine_learning_code/4-nb+nn+svm)
 
 
 **8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical)
