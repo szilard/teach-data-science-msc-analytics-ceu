@@ -7,9 +7,9 @@
 
 **3.** Why is data visualization useful?
 
-**4.** Why are tools developed for reproducible research useful in business applications?
+**4.** Why are tools developed for reproducible research useful in business data analysis workflows?
 
-**5.** Decribe the supervised learning problem in general.
+**5.** Describe the supervised learning problem in general.
 
 **6.** Why do we need a test set? Why are evaluation metrics calculated from the training set misleading?
 
@@ -17,9 +17,7 @@
 
 **8.** How do we build a random forest?
 
-**9.** How do we do cross-validation? 
-
-...
+... (TBD)
 
 
 

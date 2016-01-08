@@ -11,5 +11,6 @@ deg <- 5    # try: 5, 4, 8, 20   (complexity of the model)
 dpoly_xy <- data.frame(poly(x,deg), y)      # expand x poly
 md <- lm(y ~ ., dpoly_xy)                   # f^ 
 
-plot(y ~ x)                                 # y ~ x
-lines(predict(md, dpoly_xy) ~ x)            # f^(x) ~ x
+plot(y ~ x)                                         # y ~ x
+lines(sin(x) ~ x, col = "red")                      # f(x) ~ x  
+lines(predict(md, dpoly_xy) ~ x, col = "blue")      # f^(x) ~ x
