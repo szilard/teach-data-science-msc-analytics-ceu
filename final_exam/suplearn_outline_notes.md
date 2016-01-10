@@ -63,7 +63,7 @@ KNN: (special case:) no training, computation at scoring time only
 
 ##### Complexity params:
 
-- trees: depth
+- tree: depth
 - random forest: ~none
 - GBM: \# of trees (+learning rate, depth of trees)
 - neural nets: \# layers/neurons/weights
@@ -84,7 +84,7 @@ KNN: (special case:) no training, computation at scoring time only
 #### Performance:
 
 Most accurate: GBM, RF, NN (DL on images/speach), SVM + ensembles of them <br>
-Less accurate: LR, trees, KNN, NB
+Less accurate: LR, tree, KNN, NB
 
 
 
