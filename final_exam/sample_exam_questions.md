@@ -27,6 +27,8 @@
 
 **13.** How do we do cross validation for model evaluation?
 
+**14.** How does the train and test error change vs model complexity?
+
 **15.** Describe overfitting.
 
 **16.** How do we select models with grid search?
