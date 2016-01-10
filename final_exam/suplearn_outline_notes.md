@@ -8,9 +8,9 @@
 data: **X** (n observations/examples, p predictors/features), **y** (output/labels) -
 regression: y numeric, classification: y categorical (most often binary)
 
-train: learn/fit f from data (model/input-output mapping)
+train: learn/fit `f` from data (model/input-output mapping)
 
-score: for new input x predict output f(x)
+score: for new input `x` predict output `f(x)`
 
 methods/models/algorithms: linear regression, logistic regression (linear classification), k nearest neighbors, decision trees, random forests, gradient boosted machines (GBM), neural networks, deep learning neural networks, ~~naive Bayes, support vector machines (SVM)~~ etc.
 
@@ -37,7 +37,7 @@ model selection: grid search, select best model using validation set/cross valid
 how the training/algos work: minimize error metric/loss function on the *train set* 
 in a given class of functions usually in steps/iterations ("learning")
 
-regularization: add penalty for complexity to the loss function (too avoid overfitting)
+regularization: add penalty for complexity to the loss function (in order to avoid overfitting)
 
 ##### Training:
 
@@ -54,7 +54,8 @@ Adaboost: build successive trees by up-weighting the errors, combine the trees
 
 ~~GBM: steepest descent in functional space~~
 
-neural networks: backpropagation (gradient descent) + lots of tricks (adaptive, momentum etc.)
+neural networks: backpropagation (gradient descent) + lots of tricks 
+~~(adaptive, momentum etc.)~~
 
 ~~SVM: kernel trick, convex optimization~~
 
