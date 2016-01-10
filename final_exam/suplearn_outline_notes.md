@@ -1,7 +1,7 @@
 
 ### Supervised learning 
 
-(strike-out like ~~abc abc~~ not needed for exam)
+(strike-out like ~~abc abc abc~~ not needed for exam)
 
 #### Intro
 
@@ -12,7 +12,7 @@ train: learn/fit `f` from data (model/input-output mapping)
 
 score: for new input `x` predict output `f(x)`
 
-methods/models/algorithms: linear regression, logistic regression (linear classification), k nearest neighbors, decision trees, random forests, gradient boosted machines (GBM), neural networks, deep learning neural networks, ~~naive Bayes, support vector machines (SVM)~~ etc.
+methods/models/algorithms: linear regression (LR), logistic regression (linear classification), k nearest neighbors (KNN), decision trees, random forests, gradient boosted machines (GBM), neural networks (NN), deep learning (DL) neural networks, ~~naive Bayes (NB), support vector machines (SVM)~~ etc.
 
 
 #### Goal/Goodness
@@ -59,7 +59,7 @@ neural networks: backpropagation (gradient descent) + lots of tricks
 
 ~~SVM: kernel trick, convex optimization~~
 
-knn: (special case:) no training, computation at scoring
+KNN: (special case:) no training, computation at scoring time only
 
 ##### Complexity params:
 
@@ -68,7 +68,7 @@ knn: (special case:) no training, computation at scoring
 - GBM: \# of trees (+learning rate, depth of trees)
 - neural nets: \# layers/neurons/weights
 - ~~SVM: 1/cost~~
-- knn: `1/k`
+- KNN: `1/k`
 - ~~linear models (if regularized): sum of squared/absolute coeffs~~
 
 ##### Regularization:
@@ -83,9 +83,8 @@ knn: (special case:) no training, computation at scoring
 
 #### Performance:
 
-Most accurate: GBM, RF, NN (DL on images/speach), SVM + ensembles of them
-
-Less accurate: LR, trees, knn, NB
+Most accurate: GBM, RF, NN (DL on images/speach), SVM + ensembles of them <br>
+Less accurate: LR, trees, KNN, NB
 
 
 
