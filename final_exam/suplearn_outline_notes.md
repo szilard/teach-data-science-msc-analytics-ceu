@@ -5,8 +5,8 @@
 
 #### Intro
 
-data: **X** (n observations/examples, p predictors/features), **y** (output/labels) -
-regression: y numeric, classification: y categorical (most often binary)
+data: **X** (`n` observations/examples, `p` predictors/features), **y** (output/labels) -
+regression: `y` numeric, classification: `y` categorical (most often binary)
 
 train: learn/fit `f` from data (model/input-output mapping)
 
@@ -68,7 +68,7 @@ knn: (special case:) no training, computation at scoring
 - GBM: \# of trees, learning rate, depth of trees
 - neural nets: \# layers/neurons/weights
 - ~~SVM: 1/cost~~
-- knn: 1/k
+- knn: `1/k`
 - ~~linear models (if regularized): sum of squared/absolute coeffs~~
 
 ##### Regularization:
