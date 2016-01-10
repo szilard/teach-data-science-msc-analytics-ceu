@@ -21,13 +21,13 @@ goal: maximize accuracy/minimize generalization error (on *new* data)
 
 accuracy/error metrics: regression: mean squared error, classification: error, confusion matrix (TP, FP, TN, FN), ROC curve, AUC
 
-**bad:** measure error on train set, **must:** measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
+*bad:* measure error on train set, *must:* measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
 evaluation (would underestimate error)
 
 hyperparameters, model complexity/flexibility/degrees of freedom - as complexity increases train error decreases, test error U-shape (some optimal value/range)
 
-too complex: overfitting (and in conjunction with measuring error on train set it is biggest
-fool in machine learning)
+too complex: overfitting (and in conjunction with measuring error on train set it is *biggest
+mistake* in machine learning)
 
 model selection: grid search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for optimization can't be used for evaluation (would underestimate error)
 
