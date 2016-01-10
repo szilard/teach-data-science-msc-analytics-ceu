@@ -24,12 +24,12 @@ accuracy/error metrics: regression: mean squared error, classification: error, c
 *bad:* measure error on train set, *must:* measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
 evaluation (would underestimate error)
 
-hyperparameters, model complexity/flexibility/degrees of freedom - as complexity increases train error decreases, test error U-shape (some optimal value/range)
+hyperparameters, model complexity/flexibility/degrees of freedom - as complexity increases, train error decreases, test error U-shape (some optimal value/range)
 
 too complex: overfitting (and in conjunction with measuring error on train set it is *biggest
 mistake* in machine learning)
 
-model selection: grid search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for optimization can't be used for evaluation (would underestimate error)
+model selection: grid search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for some optimization can't be used for evaluation (would underestimate error)
 
 
 #### Algos
@@ -43,7 +43,7 @@ regularization: add penalty for complexity to the loss function (in order to avo
 
 linear regression: analytical solution or gradient descent
 
-trees: recursive splits on variables based on best loss/impurity measure 
+trees: recursive splits on variables based on best loss function/impurity measure 
 change (greedy optimization)
 
 bagging: boostrap data, build trees, aggregate
@@ -52,7 +52,7 @@ random forest: bagging with random subset of variable at each split)
 
 Adaboost: build successive trees by up-weighting the errors, combine the trees
 
-~~GBM: steepest descent in functional space~~
+~~GBM: build successive trees with steepest descent in functional space~~
 
 neural networks: backpropagation (gradient descent) + lots of tricks 
 ~~(adaptive, momentum etc.)~~
@@ -64,8 +64,8 @@ knn: (special case:) no training, computation at scoring
 ##### Complexity params:
 
 - trees: depth
-- random forest: ~NA
-- GBM: \# of trees, learning rate, depth of trees
+- random forest: ~none
+- GBM: \# of trees (+learning rate, depth of trees)
 - neural nets: \# layers/neurons/weights
 - ~~SVM: 1/cost~~
 - knn: `1/k`
