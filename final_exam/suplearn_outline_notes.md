@@ -21,12 +21,13 @@ goal: maximize accuracy/minimize generalization error (on *new* data)
 
 accuracy/error metrics: regression: mean squared error, classification: error, confusion matrix (TP, FP, TN, FN), ROC curve, AUC
 
-\#1 mistake in ML: measure error on train set, **must:** measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
+**bad:** measure error on train set, **must:** measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
 evaluation (would underestimate error)
 
 hyperparameters, model complexity/flexibility/degrees of freedom - as complexity increases train error decreases, test error U-shape (some optimal value/range)
 
-too complex: overfitting
+too complex: overfitting (and in conjunction with measuring error on train set it is biggest
+fool in machine learning)
 
 model selection: grid search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for optimization can't be used for evaluation (would underestimate error)
 
@@ -36,9 +37,9 @@ model selection: grid search, select best model using validation set/cross valid
 how the training/algos work: minimize error metric/loss function on the *train set* 
 in a given class of functions usually in steps/iterations ("learning")
 
-regularization: add penalty for complexity to the loss function
+regularization: add penalty for complexity to the loss function (too avoid overfitting)
 
-Training:
+##### Training:
 
 linear regression: analytical solution or gradient descent
 
@@ -59,8 +60,7 @@ neural networks: backpropagation (gradient descent) + lots of tricks (adaptive, 
 
 knn: (special case:) no training, computation at scoring
 
-
-Complexity params:
+##### Complexity params:
 
 - trees: depth
 - random forest: ~NA
@@ -70,8 +70,7 @@ Complexity params:
 - knn: 1/k
 - ~~linear models (if regularized): sum of squared/absolute coeffs~~
 
-
-Regularization:
+##### Regularization:
 
 - tree: pruning
 - random forest: ~auto
