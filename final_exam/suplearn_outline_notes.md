@@ -12,7 +12,7 @@ train: learn/fit `f` from data (model/input-output mapping)
 
 score: for new input `x` predict output `f(x)`
 
-methods/models/algorithms: linear regression (LR), logistic regression (linear classification), k nearest neighbors (KNN), decision trees, random forests, gradient boosted machines (GBM), neural networks (NN), deep learning (DL) neural networks, ~~naive Bayes (NB), support vector machines (SVM)~~ etc.
+methods/models/algorithms: linear regression (LR), logistic regression (linear classification), k nearest neighbors (KNN), decision trees (DT), random forests (RF), gradient boosted machines (GBM), neural networks (NN), deep learning neural networks (DL), ~~naive Bayes (NB), support vector machines (SVM)~~ etc.
 
 
 #### Goal/Goodness
