@@ -1,7 +1,7 @@
 
 ### Supervised learning 
 
-(strike out like ~~abc abc~~ not needed for exam)
+(strike-out like ~~abc abc~~ not needed for exam)
 
 #### Intro
 
@@ -15,13 +15,13 @@ score: for new input x predict output f(x)
 methods/models/algorithms: linear regression, logistic regression (linear classification), k nearest neighbors, decision trees, random forests, gradient boosted machines (GBM), neural networks, deep learning neural networks, ~~naive Bayes, support vector machines (SVM)~~ etc.
 
 
-#### Accuracy
+#### Goal/Goodness
 
 goal: maximize accuracy/minimize generalization error (on *new* data)
 
 accuracy/error metrics: regression: mean squared error, classification: error, confusion matrix (TP, FP, TN, FN), ROC curve, AUC
 
-\#1 mistake: measure error on train set, **must:** measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
+\#1 mistake in ML: measure error on train set, **must:** measure error on hold-out/test set or using cross validation (e.g. K-fold) - principle: data used for training can't be used for 
 evaluation (would underestimate error)
 
 hyperparameters, model complexity/flexibility/degrees of freedom - as complexity increases train error decreases, test error U-shape (some optimal value/range)
