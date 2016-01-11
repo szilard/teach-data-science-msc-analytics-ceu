@@ -30,7 +30,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 **5.** [ML] Model evaluation and selection: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242), Ch. 10 (p. 351)
 
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
