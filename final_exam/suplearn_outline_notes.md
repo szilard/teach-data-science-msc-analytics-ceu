@@ -15,7 +15,7 @@ score: for new input `x` predict output `f(x)`
 methods/models/algorithms: linear regression (LR), logistic regression (linear classification), k nearest neighbors (KNN), decision trees (DT), random forests (RF), gradient boosted machines (GBM), neural networks (NN), deep learning neural networks (DL), ~~naive Bayes (NB), support vector machines (SVM)~~ etc.
 
 
-#### Goal/Goodness
+#### Goodness
 
 goal: maximize accuracy/minimize generalization error (on *new* data)
 
@@ -26,7 +26,7 @@ evaluation (would underestimate error)
 
 hyperparameters, model complexity/flexibility/degrees of freedom - as complexity increases, train error decreases, test error U-shape (some optimal value/range)
 
-too complex: overfitting (and in conjunction with measuring error on train set it is *biggest
+too complex: overfitting (and in conjunction with measuring error on train set it is the *biggest
 mistake* in machine learning)
 
 model selection: grid search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for some optimization can't be used for evaluation (would underestimate error)
