@@ -18,8 +18,8 @@ Discuss which algorithms work best on your data and possibly why.
 Bonus: Try the algorithms on the raw data without the cleaning. Are the results the same or worse?
 
 Document all the steps in details. Use R-markdown with html output. 
-Submit Rmd and html file containing all your work by uploading 
-them to a github repository and sending the link. 
-The code/documentation must contain the original URL of the public dataset.
+Submit the Rmd and html files containing all your work by uploading 
+the files to your github repository and sending me the link. 
+The code/documentation must reference the original URL of the public dataset.
 
 
