@@ -3,7 +3,7 @@
 
 # from remote:
 data_url <- "https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.data"
-data_localfile <- "machine_learning_code/data/spam.csv"
+data_localfile <- "1-machine_learning_code/data/spam.csv"
 download.file(data_url, data_localfile)
 #
 data_meta <- "https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/spambase.names"
@@ -20,7 +20,7 @@ col_names <- c(col_names, "spam")
 
 
 # from local:
-data_localfile <- "machine_learning_code/data/spam.csv"
+data_localfile <- "1-machine_learning_code/data/spam.csv"
 col_names <- c("word_freq_make", "word_freq_address", "word_freq_all", "word_freq_3d", 
                "word_freq_our", "word_freq_over", "word_freq_remove", "word_freq_internet", 
                "word_freq_order", "word_freq_mail", "word_freq_receive", "word_freq_will", 

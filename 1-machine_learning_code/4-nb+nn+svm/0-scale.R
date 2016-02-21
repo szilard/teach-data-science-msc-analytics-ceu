@@ -1,5 +1,5 @@
 
-# read data, split train/test machine_learning_code/2-trees+ensembles/0-data.R
+# read data, split train/test 1-machine_learning_code/2-trees+ensembles/0-data.R
 dim(d_train)
 dim(d_test)
 

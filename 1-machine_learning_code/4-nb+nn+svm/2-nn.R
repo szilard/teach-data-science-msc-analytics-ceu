@@ -2,7 +2,7 @@
 library(nnet)
 set.seed(123)
 
-# scaled data machine_learning_code/4-nb+nn+svm/0-scale.R
+# scaled data 1-machine_learning_code/4-nb+nn+svm/0-scale.R
 dim(d_train)
 dim(d_test)
 
