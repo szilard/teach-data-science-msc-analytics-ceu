@@ -119,5 +119,11 @@ David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/234
 
 ### Assessment
 
+Materials for the final exam/data analysis project:
+
+- [Reading for the final exam](3-assessment/1a-reading_for_final_exam.md)
+- [Some notes on supervised learning](3-assessment/0-suplearn_outline_notes.md)
+- [Sample exam questions](3-assessment/1b-sample_exam_questions.md)
+- [Requirements for the data analysis project](3-assessment/2-homework_data_analysis_project.md)
 
 
