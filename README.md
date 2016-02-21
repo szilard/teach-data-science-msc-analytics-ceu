@@ -101,7 +101,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 **7.** [DS/ML] An example **data analysis project**
 
-[Demo code](ds_project_example)
+[Demo code](2-ds_project_example)
 
 **8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical). Principal component analysis
 
@@ -114,5 +114,10 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 **10.** [X] Other miscellaneous topics: text mining/NLP, networks, geo, time series, recommender systems, A/B testing etc.
 
 David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
+
+-------------------------------------------------------------
+
+### Assessment
+
 
 
