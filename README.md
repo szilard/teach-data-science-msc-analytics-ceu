@@ -117,7 +117,7 @@ David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/234
 
 -------------------------------------------------------------
 
-### Assessment
+## Exam+Project
 
 Materials for the final exam/data analysis project:
 
