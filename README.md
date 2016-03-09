@@ -139,6 +139,6 @@ Sample projects from students:
 
 "I'll mention this course if someone asks what's a good course like"
 
-"one of the most interesting and informative courses so far"
+"One of the most interesting and informative courses so far"
 
 
