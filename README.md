@@ -133,7 +133,7 @@ Sample projects from students:
 - Benedek Rozemberczki: [used car quality prediction](https://cdn.rawgit.com/szilard/student-data-science-project-3/master/Project_Cleaning_HTML_Rozemberczki.html)
 
 
-## Student feedback
+### Student feedback
 
 "Thank you for teaching this course, it was one of the most useful and inspirational ones in our program"
 
