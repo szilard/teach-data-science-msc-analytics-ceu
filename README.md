@@ -137,8 +137,8 @@ Sample projects from students:
 
 "Thank you for teaching this course, it was one of the most useful and inspirational ones in our program"
 
-"I'll mention this course if someone asks what's a good course like" ("ezutan veled fogok peldazodni ha megkerdezik, hogy milyen egy jo kurzus")
+"I'll mention this course if someone asks what's a good course like"
 
-"one of the most interesting and informative course so far" ("az egyik legérdekesebb, leginformatívabb volt az eddigiek közül")
+"one of the most interesting and informative courses so far"
 
 
