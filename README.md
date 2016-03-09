@@ -126,7 +126,7 @@ Materials for the final exam/data analysis project:
 - [Sample exam questions](3-assessment/1b-sample_exam_questions.md)
 - [Requirements for the data analysis project](3-assessment/2-homework_data_analysis_project.md)
 
-##### Sample projects from students:
+#### Sample projects from students:
 
 - Laszlo Sallo: [insurance risk prediction](https://github.com/szilard/student-data-science-project-1-kaggle) also in Kaggle competition (finished top 10%, congratulations!) 
 - Oliver Kocsis: [classification of body postures](https://cdn.rawgit.com/szilard/student-data-science-project-2/master/dataset-har-PUC-Rio-ugulino.html)
