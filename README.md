@@ -133,12 +133,10 @@ Materials for the final exam/data analysis project:
 - Benedek Rozemberczki: [used car quality prediction](https://cdn.rawgit.com/szilard/student-data-science-project-3/master/Project_Cleaning_HTML_Rozemberczki.html)
 
 
-### Student feedback:
+#### Student feedback:
 
-"Thank you for teaching this course, it was one of the most useful and inspirational ones in our program"
-
-"I'll mention this course if someone asks what's a good course like"
-
-"One of the most interesting and informative courses so far"
+- "Thank you for teaching this course, it was one of the most useful and inspirational ones in our program"
+- "I'll mention this course if someone asks what's a good course like"
+- "One of the most interesting and informative courses so far"
 
 
