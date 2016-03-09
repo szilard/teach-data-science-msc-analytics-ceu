@@ -128,6 +128,6 @@ Materials for the final exam/data analysis project:
 
 Sample projects from students:
 
-- Laszlo Sallo @salacika: [insurance prediction project](https://github.com/szilard/student-data-science-project-1-kaggle) also in Kaggle competition (finished top 10%, congratulations!) 
-
+- Laszlo Sallo: [insurance risk prediction](https://github.com/szilard/student-data-science-project-1-kaggle) also in Kaggle competition (finished top 10%, congratulations!) 
+- Oliver Kocsis: [classification of body postures](https://cdn.rawgit.com/szilard/student-data-science-project-2/master/dataset-har-PUC-Rio-ugulino.html)
 
