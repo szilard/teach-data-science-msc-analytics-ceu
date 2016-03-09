@@ -132,3 +132,13 @@ Sample projects from students:
 - Oliver Kocsis: [classification of body postures](https://cdn.rawgit.com/szilard/student-data-science-project-2/master/dataset-har-PUC-Rio-ugulino.html)
 - Benedek Rozemberczki: [used car quality prediction](https://cdn.rawgit.com/szilard/student-data-science-project-3/master/Project_Cleaning_HTML_Rozemberczki.html)
 
+
+## Student feedback
+
+"Thank you for teaching this course, it was one of the most useful and inspirational ones in our program"
+
+"I'll mention this course if someone asks what's a good course like" ("ezutan veled fogok peldazodni ha megkerdezik, hogy milyen egy jo kurzus")
+
+"one of the most interesting and informative course so far" ("az egyik legérdekesebb, leginformatívabb volt az eddigiek közül")
+
+
