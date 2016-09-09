@@ -2,7 +2,7 @@
 ## Data Science Course
 
 This repo contains materials for an introductory/intermediate 
-Data Science course taught in the new (2015) 
+Data Science course taught in the 
 [MSc in Business Analytics program](http://business.ceu.edu/msc-in-business-analytics) 
 at the Central European University (CEU).
 
@@ -10,7 +10,7 @@ One can teach only a limited amount of material
 in a short 2-credit course (1200 minutes/20 hours net) to
 students with varying analytical background. As most data science topics except 
 machine learning are covered (to some extent) in other courses in the program, 
-I decided to spend 60-70% of the available time on *machine learning*. 
+I decided to spend 70%+ of the available time on *machine learning*. 
 Yet, I'm still dedicating the 
 rest to an overview of the entire data science landscape with topics such as exploratory data analysis, data visualization, reproducibility, tools for data analysis etc. 
 (and discussing how to get details from the other courses).
@@ -27,7 +27,7 @@ and a bit further in [this post](https://github.com/szilard/datascience-course-h
 
 #### Course: Data Science for Business
 
-- **Term:** Winter 2015-2016
+- **Term:** Winter 2016-2017
 - **Credits:** 2 (4 ECTS) 
 - **Department:** Department of Economics / CEU Business School
 - **Instructor:** Szilard Pafka
@@ -126,6 +126,10 @@ Materials for the final exam/data analysis project:
 - [Sample exam questions](3-assessment/1b-sample_exam_questions.md)
 - [Requirements for the data analysis project](3-assessment/2-homework_data_analysis_project.md)
 
+-------------------------------------------------------------
+
+## Materials from previous academic years
+
 #### Sample projects from students:
 
 - Laszlo Sallo: [insurance risk prediction](https://github.com/szilard/student-data-science-project-1-kaggle) also in Kaggle competition (finished top 10%, congratulations!) 
@@ -137,6 +141,6 @@ Materials for the final exam/data analysis project:
 
 - "Thank you for teaching this course, it was one of the most useful and inspirational ones in our program"
 - "I'll mention this course if someone asks what's a good course like"
-- "One of the most interesting and informative courses so far"
+- "One of the most interesting and informative courses so far [in this program]"
 
 
