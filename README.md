@@ -19,6 +19,12 @@ My views on what a full data science curriculum
 should be are briefly expressed in the "Course focus and description" section below
 and a bit further in [this post](https://github.com/szilard/datascience-course-historical).
 
+The course is also a bit handicapped by the reality that I can come to Budapest only for a 
+limited amount of time and therefore the classes had to be condensed in a 2-week period.
+Spreading the classes over more time would allow weekly homework assignements and 
+required reading (papers) and also more interaction with the students.
+
+
 -------------------------------------------------------------
 
 ## Syllabus
@@ -53,7 +59,7 @@ Other topics, equally important for Data Science will be just briefly discussed 
 
 **1.** [DS] **The Data Science process**: business understanding, data acquisition, exploratory data analysis, data cleaning, feature engineering, advanced statistical modeling, model validation, technical implementation and deployment, communication of results to decision makers.
 
-Foster Provost, Tom Fawcett: [Data Science for Business](http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323), Ch. 2 (pp. 19-41)
+Foster Provost, Tom Fawcett: [Data Science for Business](http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323), Ch. 2 (pp. 26-41)
 
 [Slides](https://docs.google.com/presentation/d/1aPymN2aJlqLigLin_IaEPAee0V17EPkfvvyPLq9X6dA/edit?usp=sharing)
 
@@ -63,39 +69,35 @@ Foster Provost, Tom Fawcett: [Data Science for Business](http://www.amazon.com/D
 Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: 
 [Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) (pp. 1-10)
 
-Rexer Analytics: [2013 Data Miner Survey (Summary Report)](http://www.rexeranalytics.com/Data-Miner-Survey-Results-2013.html) (pp. 8, 9, 12, 16, 31, 35)
-
 [Slides](https://docs.google.com/presentation/d/1rsoJRnLjKojbpc-nb9y-t-0410rBDLIb_2oTL4pSH7M/edit?usp=sharing)
 
 
-**3.** [ML] **Supervised learning**. Linear models vs k-nearest neighbors (bias, variance). An overview of supervised learning methods (with details in the following 3 sessions). Linear regression. Ridge regression and Lasso (regularization). Logistic regression
+**3.** [ML] **Supervised learning**. Introduction to supervised learning. Linear models vs k-nearest neighbors 
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 2 (pp. 9-24, 28-30), Ch. 3 (pp. 43-45, 47, 51-52, 57, 62-65, 68-69, 71), Ch. 4 (pp. 119-120)
-
-Leo Breiman: [Statistical Modeling: The Two Cultures](http://projecteuclid.org/euclid.ss/1009213726) (pp. 199, 202-205)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 2 (pp. 9-17, 28-29)
 
 [Demo code](1-machine_learning_code/1-intro+linear)
 
 
-**4.** [ML] Decision trees. Bagging. Random forests. GBM. Ensembles I.
+**4.** [ML] Decision trees. Random forests. GBM
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 9 (pp. 295, 305-312), Ch. 8 (pp. 282-286), Ch. 15 (pp. 587-594), Ch. 10 (pp. 337-340)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 9 (pp. 305-309), Ch. 15 (pp. 587-592), Ch. 10 (pp. 337-340)
 
 [Demo code](1-machine_learning_code/2-trees+ensembles/)
 
 
-**5.** [ML] **Model evaluation and selection**: bias and variance, overfitting, training and test error, regularization, cross-validation, ROC curve, data leakage. Comparison of various supervised learning methods (accuracy)
+**5.** [ML] Model evaluation and selection: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-223, 241-242, 244), Ch. 10 (p. 351)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242), Ch. 10 (p. 351)
 
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
 [Demo code](1-machine_learning_code/3-model_eval)
 
 
-**6.** [ML] [Supervised Learning continued] Naive Bayes. Neural networks. SVM. Deep Learning. Ensembles II.
+**6.** [ML] Neural networks
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408), Ch. 12 (pp. 417-426)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408)
 
 [Demo code](1-machine_learning_code/4-nb+nn+svm)
 
@@ -103,15 +105,15 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 [Demo code](2-ds_project_example)
 
-**8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical). Principal component analysis
+**8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical)
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 14 (pp. 485-487, 502-513, 520-525, 534-538)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 14 (pp. 485-486, 502-503, 507-511, 520-524)
 
 [Demo code](1-machine_learning_code/5-unsup)
 
 **9.** [DS/ML] **Q&A**. Discuss requirements for the homework data analysis project
 
-**10.** [X] Other miscellaneous topics: text mining/NLP, networks, geo, time series, recommender systems, A/B testing etc.
+**10.** [X] Other miscellaneous topics. Recap. Prep/Q&A for Final Exam
 
 David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
