@@ -59,24 +59,22 @@ Other topics, equally important for Data Science will be just briefly discussed 
 
 **1.** [DS] **The Data Science process**: business understanding, data acquisition, exploratory data analysis, data cleaning, feature engineering, advanced statistical modeling, model validation, technical implementation and deployment, communication of results to decision makers.
 
-Foster Provost, Tom Fawcett: [Data Science for Business](http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323), Ch. 2 (pp. 26-41)
-
 [Slides](https://docs.google.com/presentation/d/1aPymN2aJlqLigLin_IaEPAee0V17EPkfvvyPLq9X6dA/edit?usp=sharing)
+
+Optional reading: Foster Provost, Tom Fawcett: [Data Science for Business](http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323), Ch. 2 (pp. 26-41)
 
 
 **2.** [DS] Tools for Data Science (R/Python, databases). Exploratory data analysis. Data preparation/munging. Data visualization. Tools for workflow/reproducibility/productivity
 
-Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: 
-[Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) (pp. 1-10)
-
 [Slides](https://docs.google.com/presentation/d/1rsoJRnLjKojbpc-nb9y-t-0410rBDLIb_2oTL4pSH7M/edit?usp=sharing)
+
+Optional reading: Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: 
+[Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) (pp. 1-10)
 
 
 **3.** [ML] **Supervised learning**. Introduction to supervised learning. Linear models vs k-nearest neighbors 
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 2 (pp. 9-17, 28-29)
-
-[Demo code](1-machine_learning_code/1-intro+linear)
 
 
 **4.** [ML] Decision trees. Random forests. GBM
@@ -90,9 +88,9 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242), Ch. 10 (p. 351)
 
-Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
-
 [Demo code](1-machine_learning_code/3-model_eval)
+
+Optional reading: Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
 
 **6.** [ML] Neural networks
@@ -101,9 +99,11 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 [Demo code](1-machine_learning_code/4-nb+nn+svm)
 
+
 **7.** [DS/ML] An example **data analysis project**
 
 [Demo code](2-ds_project_example)
+
 
 **8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical)
 
@@ -111,7 +111,9 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 
 [Demo code](1-machine_learning_code/5-unsup)
 
+
 **9.** [DS/ML] **Q&A**. Discuss requirements for the homework data analysis project
+
 
 **10.** [X] Other miscellaneous topics. Recap. Prep/Q&A for Final Exam
 
