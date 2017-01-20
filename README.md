@@ -118,6 +118,14 @@ Optional reading: David Donoho: [50 years of Data Science](https://dl.dropboxuse
 
 -------------------------------------------------------------
 
+## Announcements and Q&A
+
+Class announcements and student Q&A will be done via 
+[github issues](https://github.com/szilard/teach-data-science-msc-analytics-ceu/issues).
+
+
+-------------------------------------------------------------
+
 ## Exam+Project
 
 Materials for the final exam/data analysis project:
