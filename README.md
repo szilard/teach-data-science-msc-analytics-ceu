@@ -84,7 +84,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 [Demo code](1-machine_learning_code/2-trees+ensembles/)
 
 
-**5.** [ML] Model evaluation and selection: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
+**5. 6.** [ML] Model evaluation and selection: training and test error, overfitting, cross-validation, regularization, ROC curve. Comparison of various supervised learning methods (accuracy)
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 7 (pp. 219-222, 241-242), Ch. 10 (p. 351)
 
@@ -93,31 +93,28 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 Optional reading: Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf) (pp. 1-8)
 
 
-**6.** [ML] Neural networks
+**7.** [ML] Neural networks
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 11 (pp. 392-400, 404-408)
 
 [Demo code](1-machine_learning_code/4-nb+nn+svm)
 
 
-**7.** [DS/ML] An example **data analysis project**
+**8.** [DS/ML] An example **data analysis project**
 
 [Demo code](2-ds_project_example)
 
 
-**8.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical)
+**9.** [ML] **Unsupervised learning**. Clustering (k-means, hierarchical)
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning (2nd Edition)](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Ch. 14 (pp. 485-486, 502-503, 507-511, 520-524)
 
 [Demo code](1-machine_learning_code/5-unsup)
 
 
-**9.** [DS/ML] **Q&A**. Discuss requirements for the homework data analysis project
+**10.** [DS] Recap/Q&A Final exam and Homework project
 
-
-**10.** [X] Other miscellaneous topics. Recap. Prep/Q&A for Final Exam
-
-David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
+Optional reading: David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
 -------------------------------------------------------------
 
