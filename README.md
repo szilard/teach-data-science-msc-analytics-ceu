@@ -112,7 +112,7 @@ Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical 
 [Demo code](1-machine_learning_code/5-unsup)
 
 
-**10.** [DS] Recap/Q&A Final exam and Homework project
+**10.** [DS/ML] Recap/Q&A Final exam and Homework project
 
 Optional reading: David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
