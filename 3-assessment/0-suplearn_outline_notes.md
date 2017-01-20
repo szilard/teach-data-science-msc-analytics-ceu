@@ -29,7 +29,7 @@ hyperparameters, model complexity/flexibility/degrees of freedom - as complexity
 too complex: overfitting (and in conjunction with measuring error on train set it is the *biggest
 mistake* in machine learning)
 
-model selection: grid search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for some optimization can't be used for evaluation (would underestimate error)
+model selection: grid/random search, select best model using validation set/cross validation, evaluate best model using separate hold-out/test set - principle: data used for training can't be used for model selection, data used for model selection can't be used for model evaluation - general principle: data used for some optimization can't be used for evaluation (would underestimate error)
 
 
 #### Algos
@@ -69,7 +69,7 @@ KNN: (special case:) no training, computation at scoring time only
 - neural nets: \# layers/neurons/weights
 - ~~SVM: 1/cost~~
 - KNN: `1/k`
-- ~~linear models (if regularized): sum of squared/absolute coeffs~~
+- linear models (if regularized): sum of squared/absolute coeffs
 
 ##### Regularization:
 
@@ -78,12 +78,12 @@ KNN: (special case:) no training, computation at scoring time only
 - GBM: early stopping
 - neural networks: L1, L2, dropout, early stopping
 - ~~SVM: ~auto~~
-- ~~linear models: L1 (lasso), L2 (ridge)~~
+- linear models: L1 (lasso), ~~L2 (ridge)~~
 
 
 #### Performance:
 
-Most accurate: GBM, RF, NN (DL on images/speach), SVM + ensembles of them <br>
+Most accurate: GBM, RF, NN (DL on images/speach), ~~SVM~~ + ensembles of them <br>
 Less accurate: LR, tree, KNN, NB
 
 
