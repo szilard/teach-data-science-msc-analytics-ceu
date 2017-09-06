@@ -1,4 +1,9 @@
 
+**Update**: This course taught in January 2015 and 2016 has been superseded in 
+January 2017 by [this course](https://github.com/szilard/teach-ML-CEU-master-bizanalytics).
+
+-------------------------------------------------------------------
+
 ## Data Science Course
 
 This repo contains materials for an introductory/intermediate 
