@@ -1,6 +1,6 @@
 
-**Update**: This course taught in January 2015 and 2016 has been superseded in 
-January 2017 by [this course](https://github.com/szilard/teach-ML-CEU-master-bizanalytics).
+**Update**: This course taught in January 2016 and 2017 has been superseded in 
+January 2018 by [this course](https://github.com/szilard/teach-ML-CEU-master-bizanalytics).
 
 -------------------------------------------------------------------
 
